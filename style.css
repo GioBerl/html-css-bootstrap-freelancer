@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.navbar-default {
+    background-color: #2C3E50;
+    text-decoration: none;
+    padding: 2% 0;
+    border: none;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    padding-right: 30px;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background: #18bc9c;
+}
+
+header .container {
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
+header img {
+    /* display: block; */
+    margin: 0 auto 20px;
+    width: 240px;
+}
+
+header .intro-text .start {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+
+.star-wrapper {
+    margin: 25px 0 30px;
+}
+
+.left-line {
+    background-color: #fff;
+    width: 80px;
+    /* max-width: 100px; */
+    height: 2.5px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.star {
+    display: inline-block;
+}
+
+.star i {
+    font-size: 32px;
+}
+
+.right-line {
+    background-color: #fff;
+    width: 80px;
+    max-width: 100px;
+    height: 2.5px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.skills {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
