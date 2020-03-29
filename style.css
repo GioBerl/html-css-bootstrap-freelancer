@@ -8,6 +8,21 @@ body {
     border: none;
 }
 
+.navbar-default .navbar-toggle {
+    background-color: #1ABC9C;
+    border: none;
+}
+
+/* dopo che ho clickato */
+.navbar-default .navbar-toggle:focus {
+    background-color: #1ABC9C;
+}
+/* ------------- */
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
     color: white;
 }
@@ -20,13 +35,9 @@ body {
 
 .navbar-default .navbar-nav>li>a {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     padding-left: 30px;
-}
-
-.navbar-default .navbar-nav>li>a:not(:last-of-type) {
-    
 }
 
 .jumbotron {
@@ -44,9 +55,9 @@ body {
 
 .star {
     position: relative;
-    margin: 20px 10px;
     width: 200px;
     margin: 30px auto 20px;
+    font-size: 32px;
 }
 
 .star::before {
@@ -67,4 +78,8 @@ body {
     position: absolute;
     top: 50%;
     right: 0;
+}
+
+.skills {
+    font-size: 20px;
 }
