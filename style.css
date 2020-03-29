@@ -6,6 +6,7 @@ body {
 .navbar-default {
     background-color: #2C3E50;
     border: none;
+    padding: 20px 0;
 }
 
 .navbar-default .navbar-toggle {
@@ -13,18 +14,22 @@ body {
     border: none;
 }
 
-/* dopo che ho clickato */
+/* after hover and click */
 .navbar-default .navbar-toggle:focus {
     background-color: #1ABC9C;
-}
-/* ------------- */
-
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
     color: white;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-nav>li>a:focus {
+    color: white;
+}
+/* --------------------------- */
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 
 .navbar-default .navbar-brand {
@@ -53,14 +58,14 @@ body {
     font-weight: 800;
 }
 
-.star {
+header .star {
     position: relative;
     width: 200px;
     margin: 30px auto 20px;
     font-size: 32px;
 }
 
-.star::before {
+header .star::before {
     content: "";
     background-color: white;
     width: 70px;
@@ -70,7 +75,7 @@ body {
     left: 0;
 }
 
-.star::after {
+header .star::after {
     content: "";
     background-color: white;
     width: 70px;
