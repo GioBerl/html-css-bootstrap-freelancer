@@ -7,6 +7,11 @@ body {
     background-color: #1ABC9C;
 }
 
+.padding-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
 .navbar-default {
     background-color: #2C3E50;
     border: none;
@@ -62,7 +67,7 @@ body {
 }
 
 .jumbotron img {
-    width: 240px;
+    height: 200px;
 }
 
 .jumbotron h1 {
@@ -105,10 +110,12 @@ body {
 }
 /* FINE HEADER */
 
+
+/* PORTFOLIO SECTION */
 section#portfolio {
     color: black;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    /* padding-top: 80px;
+    padding-bottom: 80px; */
 }
 
 section#portfolio h2 {
@@ -130,8 +137,10 @@ section#portfolio .star::after {
 }
 
 /* ABOUT SECTION */
-section#about p {
-    display: inline-block;
+section#about a.btn {
+    padding: 20px;
+    border: 1px solid white;
+    color: white;
 }
 
 
