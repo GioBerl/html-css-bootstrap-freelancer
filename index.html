@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -24,8 +24,8 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <button type="button" class="navbar-toggle collapsed bg-colored" data-toggle="collapse"
+                    data-target="#navigation-menu" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -35,31 +35,82 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="navigation-menu">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a class="text-uppercase" href="#">Portfolio</a></li>
-                    <li><a class="text-uppercase" href="#">About</a></li>
-                    <li><a class="text-uppercase" href="#">Contact</a></li>
+                    <li><a class="text-uppercase" href="#portfolio">Portfolio</a></li>
+                    <li><a class="text-uppercase" href="#about">About</a></li>
+                    <li><a class="text-uppercase" href="#contact">Contact</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
 
     <!-- header -->
-    <header class="jumbotron text-center">
+    <header class="jumbotron text-center bg-colored">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <img class="text-center" src="img/avatar.svg" alt="">
-                </div>
-            </div>
-            <h1 class="text-center text-uppercase">start bootstrap</h1>
+            <img class="img-responsive center-block" src="img/avatar.svg" alt="">
+            <h1 class="text-uppercase">start bootstrap</h1>
+            <!-- stellina malefica -->
             <div class="star text-center">
                 <i class="fas fa-star"></i>
             </div>
+            <!-- ----------------- -->
             <span class="skills">Graphic Artist - Web Designer - Illustrator</span>
         </div>
     </header>
+
+    <!-- portfolio section -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="text-center text-uppercase h1">portfolio</h2>
+            <!-- stellina malefica -->
+            <div class="star text-center">
+                <i class="fas fa-star"></i>
+            </div>
+            <!-- ----------------- -->
+            <div class="row">
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/casa.png" alt="">
+                </div>
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/cake.png" alt="">
+                </div>
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/circus.png" alt="">
+                </div>
+                <!-- qui non devo fare un' altra row altrimenti andrebbe a capo -->
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/game.png" alt="">
+                </div>
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/safe.png" alt="">
+                </div>
+                <div class="img-padding col-sm-6 col-lg-4">
+                    <img class="img-rounded img-responsive" src="img/submarine.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="bg-colored">
+        <div class="container">
+            <h2 class="text-center text-uppercase h1">about</h2>
+            <!-- stellina malefica -->
+            <div class="star text-center">
+                <i class="fas fa-star"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+                    <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
 
 

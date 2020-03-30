@@ -3,14 +3,20 @@ body {
     color: white;
 }
 
+.bg-colored {
+    background-color: #1ABC9C;
+}
+
 .navbar-default {
     background-color: #2C3E50;
     border: none;
+    border-radius: 0;
     padding: 20px 0;
+    margin-bottom: 0;
 }
 
 .navbar-default .navbar-toggle {
-    background-color: #1ABC9C;
+    /* background-color: #1ABC9C; */
     border: none;
 }
 
@@ -19,11 +25,13 @@ body {
     background-color: #1ABC9C;
 }
 
-.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-brand:hover, 
+.navbar-default .navbar-nav>li>a:hover {
     color: white;
 }
 
-.navbar-default .navbar-brand:focus, .navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-nav>li>a:focus {
     color: white;
 }
 /* --------------------------- */
@@ -32,6 +40,7 @@ body {
     background-color: white;
 }
 
+/* ricorda di aggiungere media query per la font-size */
 .navbar-default .navbar-brand {
     font-size: 25px;
     font-weight: 600;
@@ -45,9 +54,11 @@ body {
     padding-left: 30px;
 }
 
+/* HEADER */
 .jumbotron {
-    background-color: #1ABC9C;
+    /* background-color: #1ABC9C; */
     padding: 150px 0 60px;
+    margin-bottom: 0;
 }
 
 .jumbotron img {
@@ -58,33 +69,79 @@ body {
     font-weight: 800;
 }
 
-header .star {
+/* stellina malefica */
+.star {
     position: relative;
     width: 200px;
-    margin: 30px auto 20px;
+    margin: 20px auto;
     font-size: 32px;
 }
 
-header .star::before {
+.star::before {
     content: "";
     background-color: white;
-    width: 70px;
+    width: calc((100% - 60px) / 2);
     height: 2px;
     position: absolute;
     top: 50%;
     left: 0;
+    transform: translateY(-50%);
 }
 
-header .star::after {
+.star::after {
     content: "";
     background-color: white;
-    width: 70px;
+    width: calc((100% - 60px) / 2);
     height: 2px;
     position: absolute;
     top: 50%;
     right: 0;
+    transform: translateY(-50%);
 }
+/* ----------------- */
 
 .skills {
     font-size: 20px;
+}
+/* FINE HEADER */
+
+section#portfolio {
+    color: black;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+section#portfolio h2 {
+    font-weight: 800;
+}
+
+section#portfolio .star {
+    color: black;
+}
+
+section#portfolio .star::before,
+section#portfolio .star::after {
+    background-color: black;
+}
+
+.img-padding {
+    padding: 0 20px;
+    padding-bottom: 30px;
+}
+
+/* ABOUT SECTION */
+section#about p {
+    display: inline-block;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 417px) {
+    .navbar-default .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-default {
+        padding: 0;
+    }
 }
