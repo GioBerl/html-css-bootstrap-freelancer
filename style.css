@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+.bold-text {
+    font-weight: 800;
+}
+
 .bg-colored {
     background-color: #1ABC9C;
 }
@@ -70,9 +74,9 @@ body {
     height: 200px;
 }
 
-.jumbotron h1 {
+/* .jumbotron h1 {
     font-weight: 800;
-}
+} */
 
 /* stellina malefica */
 .star {
@@ -110,17 +114,12 @@ body {
 }
 /* FINE HEADER */
 
+section#portfolio,
+section#contact {
+    color: black;
+}
 
 /* PORTFOLIO SECTION */
-section#portfolio {
-    color: black;
-    /* padding-top: 80px;
-    padding-bottom: 80px; */
-}
-
-section#portfolio h2 {
-    font-weight: 800;
-}
 
 section#portfolio .star {
     color: black;
@@ -141,6 +140,34 @@ section#about a.btn {
     padding: 20px;
     border: 1px solid white;
     color: white;
+}
+
+/* CONCTACT SECTION */
+section#contact .star::before,
+section#contact .star::after {
+    background-color: black;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-wrapper input,
+.form-wrapper textarea {
+    border-bottom: 1px solid #a39e9e;
+    padding: 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    box-shadow: none;
+    height: 63px;
+    border-radius: 0px;
+    font-size: 20px;
+    margin: auto;
+}
+
+textarea {
+    resize: none;
 }
 
 
