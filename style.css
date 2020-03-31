@@ -196,6 +196,10 @@ section#contact .star::after {
     margin: auto;
 }
 
+.form-wrapper textarea {
+    height: 200px;
+}
+
 textarea {
     resize: none;
 }
